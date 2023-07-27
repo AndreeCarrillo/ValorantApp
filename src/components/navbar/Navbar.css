@@ -1,0 +1,13 @@
+.combo{
+    background-color: #111111;
+    color: #F9F9F9;
+    border-color: #111111;
+}
+.combo:hover{
+    background-color: #2e2e2e;
+}
+
+.combo:focus{
+    border: none;
+    box-shadow: none;
+}

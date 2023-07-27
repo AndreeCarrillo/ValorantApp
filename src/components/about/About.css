@@ -1,0 +1,92 @@
+.tittle{
+    font-family: 'Saira Condensed', sans-serif;
+    color: #0F1923;
+    font-size: 7vw;
+}
+.subtittle{
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #383E3A;
+}
+
+p{
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #768079;
+}
+.tittle2{
+    font-family: 'Saira Condensed', sans-serif;
+    color: #ECE8E1;
+    font-size: 7vw;
+    line-height: 100%;
+}
+
+.subtittle2{
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #ECE8E1;
+}
+
+.parrafo{
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #ECE8E1;
+    position: inherit;
+}
+
+.section1::after{
+    content: "";
+    display: block;
+    border-left: 1px solid #383E3A;
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    top:0;
+    left: -7.60%;
+    z-index: 2;
+}
+
+.section2::after{
+    content: "";
+    display: block;
+    border-left: 1px solid #383E3A;
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    top:0;
+    left: 9.15%;
+    z-index: 2;
+}
+.section2::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom:50px solid #FF4655;
+    position: absolute;
+    top: -50px;
+}
+
+.img::after{
+    content: "";
+    display: block;
+    border-left: 1px solid #383E3A;
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    top:0;
+    left: -34.1%;
+    z-index: 2;
+}
+
+.container::before{
+    content: "";
+    background-color: #FF4655;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    left: -100px;
+}
+
+@media (max-width: 990px) {
+    .img{
+        display: none;
+    }
+}
