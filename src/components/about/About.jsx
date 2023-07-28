@@ -17,7 +17,7 @@ export const About = () => {
                             <div style={{width:"8px", height:"8px", backgroundColor:"#FF4655"}}></div>
                             <div className='mx-5' style={{width:"8px", height:"8px", backgroundColor:"#FF4655"}}></div>
                         </div>
-                        <video width={"80%"} controls autoPlay loop>
+                        <video width={"80%"} autoPlay loop>
                             <source src='https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltefd45731d8f9d9df/6217f2ea910a6c613c73168c/VALORANT_PLAY22_16x9_Target4_v005.mp4' type='video/mp4'/>
                         </video>
                     </div>

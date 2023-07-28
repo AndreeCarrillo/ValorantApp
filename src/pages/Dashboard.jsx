@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Navbar } from "../components/navbar/Navbar"
 import { About } from "../components/about/about"
-import { Stick } from "../components/stick/Stick"
+import { Maps } from "../components/maps/Maps"
 
 export const Dashboard = ()=>{
 
@@ -13,9 +13,9 @@ export const Dashboard = ()=>{
     return (
         <>
             <div style={{backgroundColor:"#ECE8E1"}}>
-                {/* <Stick/> */}
                 <Navbar updateComboSelect={updateComboSelect}/>
-                <About/>
+                {comboSelect=='ABOUT US' && <About/>}
+                {comboSelect=='MAPS' && <Maps/>}                
             </div>
         </>
     )
