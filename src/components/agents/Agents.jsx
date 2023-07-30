@@ -9,25 +9,23 @@ export const Agents = () => {
     const fetchAgents = async () => {
         try {
             const apidata = await GetAllAgents();
-            setData(apidata.data)
+            setData(apidata.data.filter((item)=> item.isPlayableCharacter == true))
         } catch (error) {
-            console.error('Error al obtener los datos desde el componente:', error)
+            console.error('Error al obtener los datos desde el componente:', error);
         }
     }
-
     useEffect(()=>{
         fetchAgents()
-    })
+    }, [])
 
     return (
         <>
-            <div style={{top:"9vh", position:"relative"}}>  
-                <AgentsContainer/>          
-                {/* {data.map((item)=>(
+            <div style={{top:"9vh", position:"relative", backgroundColor:"#111"}}>          
+                {data.map((item, index)=>(
                     <div key={item.uuid}>
-                        <AgentsContainer/>
+                        {item.isPlayableCharacter==true?<AgentsContainer item={item} role={item.role} index={index}/>:<></>}
                     </div>
-                ))} */}
+                ))}
             </div>
         </>
     )

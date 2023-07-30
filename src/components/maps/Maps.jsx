@@ -4,7 +4,6 @@ import { MapContainer } from "./MapContainer";
 
 export const Maps = () => {
 
-    
     const [data, setData] = useState([]);
 
     const fetchData = async () =>{
