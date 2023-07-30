@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from "react";
-import { fetchMaps } from "../../services/MapsService"
+import { useEffect, useState } from "react";
+import { GetAllMaps } from "../../services/MapsService"
 import { MapContainer } from "./MapContainer";
 
 export const Maps = () => {
@@ -9,7 +9,7 @@ export const Maps = () => {
 
     const fetchData = async () =>{
         try{
-            const apiData = await fetchMaps();
+            const apiData = await GetAllMaps();
             setData(apiData.data)
         } catch (error) {
             console.error('Error al obtener los datos desde el componente:', error);

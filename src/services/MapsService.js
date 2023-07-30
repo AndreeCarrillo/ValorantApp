@@ -1,6 +1,6 @@
 const API_BASE_URL = 'https://valorant-api.com/v1/maps';
 
-export const fetchMaps = async () => {
+export const GetAllMaps = async () => {
     try {
         const response = await fetch(API_BASE_URL);
         return response.json();
