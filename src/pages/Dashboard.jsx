@@ -3,6 +3,7 @@ import { Navbar } from "../components/navbar/Navbar"
 import { About } from "../components/about/about"
 import { Maps } from "../components/maps/Maps"
 import { Agents } from "../components/agents/Agents"
+import { Weapons } from "../components/weapons/Weapons"
 
 export const Dashboard = ()=>{
 
@@ -17,7 +18,8 @@ export const Dashboard = ()=>{
                 <Navbar updateComboSelect={updateComboSelect}/>
                 {comboSelect=='ABOUT US' && <About/>}
                 {comboSelect=='MAPS' && <Maps/>}                
-                {comboSelect=='AGENTS' && <Agents/>}    
+                {comboSelect=='AGENTS' && <Agents/>}   
+                {comboSelect=='WEAPONS' && <Weapons/>}
             </div>
         </>
     )

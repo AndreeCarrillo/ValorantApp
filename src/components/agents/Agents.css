@@ -1,19 +1,35 @@
 .btn:hover{
     color: #ECE8E1 !important;
     background-color: #0F1923 !important;
+    transform: translate(0px, -10px);
+    transition: all 0.3s ease-out !important;
 }
 .box:hover{
     opacity: 1 !important;
     transition: all 1s linear !important;
 }
 
-@keyframes idaVuelta {
-    0%, 100% {
-        animation-timing-function: ease-in-out;
-        animation-name: ida;
+.ability:hover{
+    opacity: 1 !important;
+    transition: all 0.3s ease-out !important;
+}
+.ability-box:hover{
+    transform: translate(0px, -5px);
+    box-shadow: none !important;
+    transition: all 0.3s ease-out !important;
+}
+
+.txt{
+    animation: moverElemento 1.5s ease-in-out;
+}
+
+@keyframes moverElemento {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
     }
-    50% {
-        animation-timing-function: ease-in-out;
-        transform: translateX(-100px);
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
     }
 }

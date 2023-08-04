@@ -38,8 +38,8 @@ p{
     pointer-events: none;
     position: absolute;
     top:0;
-    left: -7.60%;
     z-index: 2;
+    left: -7.60%;
 }
 
 .section2::after{
@@ -56,12 +56,13 @@ p{
 .section2::before{
     content: "";
     width: 0;
-    height: 0;
+    height: 100%;
     border-left: 0px solid transparent;
     border-right: 50px solid transparent;
     border-bottom:50px solid #FF4655;
     position: absolute;
     top: -50px;
+    left: -50vh;
 }
 
 .img::after{

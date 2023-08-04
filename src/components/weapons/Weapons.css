@@ -1,0 +1,48 @@
+.page::after{
+    content: "";
+    display: block;
+    border-left: 1px solid #383E3A;
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    top:0;
+    left: 6%;
+    z-index: 2;
+}
+
+.text::before{
+    content: "";
+    background-color: #FF4655;
+    width: 45%;
+    height: 8px;
+    position: absolute;
+    top: 2%;
+    left: 55%;
+}
+
+.grow::before{
+    content: "";
+    background-color: #FF4655;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    left: 5.6%;
+}
+
+.sub::before{
+    content: "";
+    background-color: #FF4655;
+    width: 8px;
+    height: 3%;
+    position: absolute;
+    left: 18%;
+}
+
+.imagen::after{
+    content: "";
+    background-color: #FF4655;
+    width: 8px;
+    height: 3%;
+    position: absolute;
+    right: 18%;
+}

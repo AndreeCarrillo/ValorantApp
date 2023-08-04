@@ -20,13 +20,13 @@ export const Agents = () => {
 
     return (
         <>
-            <div style={{top:"9vh", position:"relative", backgroundColor:"#111"}}>          
-                {data.map((item, index)=>(
-                    <div key={item.uuid}>
-                        {item.isPlayableCharacter==true?<AgentsContainer item={item} role={item.role} index={index}/>:<></>}
-                    </div>
-                ))}
-            </div>
+                <div style={{top:"9vh", position:"relative", backgroundColor:"#111"}}>          
+                    {data.map((item, index)=>(
+                        <div key={item.uuid}>
+                            {item.isPlayableCharacter==true?<AgentsContainer item={item} role={item.role} index={index}/>:<></>}
+                        </div>
+                    ))}
+                </div>
         </>
     )
 }
