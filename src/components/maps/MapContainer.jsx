@@ -4,7 +4,7 @@ export const MapContainer = ({index, displayName, splash, coordinates}) =>{
 
     return (
         <>
-            <div className='d-flex justify-content-center align-items-center' style={{backgroundImage:`url(${splash})`, backgroundSize:"inherit", width:"100%", height:"91vh"}}>
+            <div className='d-flex justify-content-center align-items-center' style={{backgroundImage:`url(${splash})`, backgroundSize:"cover", width:"100%", height:"91vh", backgroundPosition:"center"}}>
                 <span style={{color:"#ECE8E1", position:"absolute", top:"20px", left:"25px", fontSize:"1.2em"}}>{coordinates}</span>
                 <h1 style={{fontFamily:"'Saira Condensed', sans-serif", color:"#FF4655", fontSize:"16vw"}}>{displayName.toUpperCase()}</h1>
                 {index<=9?
