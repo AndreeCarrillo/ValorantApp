@@ -31,7 +31,7 @@ export const AgentsContainer = ({item, role,index}) => {
                         <hr className='d-flex justify-content-center' style={{border:`1.5px solid #111`, width:"100%"}}></hr>
                         <h5 className="py-0" style={{fontFamily:"'Saira Condensed', sans-serif", color:"#111"}}>// ROL</h5>
                         <div className="div2 d-flex flex-row align-items-stretch pb-2">
-                            <h1 className="" style={{fontFamily:"'Saira Condensed', sans-serif", fontSize:"5em", color:"#111"}}>{role.displayName.toUpperCase()}</h1>
+                            <h1 className="" style={{fontFamily:"'Saira Condensed', sans-serif", fontSize:"4em", color:"#111"}}>{role.displayName.toUpperCase()}</h1>
                             <img className="imgb mx-3 mt-3" style={{width:"2em", height:"2em", color:"#111"}} src={role.displayIcon}/>
                         </div>
                         <h5 style={{fontFamily:"'Saira Condensed', sans-serif", color:"#111"}}>// BIOGRAFÍA</h5>
