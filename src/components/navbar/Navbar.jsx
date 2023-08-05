@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import './navbar.css'
+import './Navbar.css'
 
 export const Navbar = ({updateComboSelect}) =>{
 
