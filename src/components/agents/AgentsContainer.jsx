@@ -48,19 +48,19 @@ export const AgentsContainer = ({item, role,index}) => {
                     <div className="modal-content" style={{backgroundColor:`#${item.backgroundGradientColors[0]}`}}>
                         <div className="modal-header" style={{borderBottom:`2px solid #${item.backgroundGradientColors[3]}`}}>
                             <img src={item.displayIcon} width={"10%"} className='me-2'></img>
-                            <h5 style={{fontFamily:"'Saira Condensed', sans-serif", fontSize:"2vw"}} className="modal-title">{item.displayName.toUpperCase()}</h5>
+                            <h5 style={{fontFamily:"'Saira Condensed', sans-serif", fontSize:"2em"}} className="modal-title">{item.displayName.toUpperCase()}</h5>
                             <button type="button" className="btn-close me-1" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body" >
                             <h5 style={{fontFamily:"'Saira Condensed', sans-serif", color:"#111"}}>BIOGRAFÍA</h5>
                             <p className="fw-bolder" style={{fontFamily: "'Noto Sans JP', sans-serif", color:`#111`, width:"100%", textAlign:"justify"}}>{item.description}</p>
                         </div>
-                        <div className="modal-footer justify-content-around" style={{borderTop:`2px solid #${item.backgroundGradientColors[3]}`}}>
-                            <div className='d-flex flex-row justify-content-around'>
+                        <div className="modal-footer d-flex flex-column justify-content-around" style={{borderTop:`2px solid #${item.backgroundGradientColors[3]}`}}>
+                            <div className='d-flex flex-row justify-content-around flex-wrap'>
                                 {item.abilities.map((ability)=>(
-                                    <div className='d-flex flex-row justify-content-around'  key={ability.displayName}>
+                                    <div className='d-flex flex-row justify-content-around flex-wrap'  key={ability.displayName}>
                                         {ability.slot=="Passive"?<></>:
-                                        <div className='ability-box mx-4 my-1' style={{backgroundColor:`#${item.backgroundGradientColors[3]}`, boxShadow:`0px 0px 10px #${item.backgroundGradientColors[1]}`}}>
+                                        <div className='ability-box mx-3 my-1' style={{backgroundColor:`#${item.backgroundGradientColors[3]}`, boxShadow:`0px 0px 10px #${item.backgroundGradientColors[1]}`}}>
                                             <a onClick={()=>handlerAbilityInfo(ability.description, ability.displayName.toUpperCase())} style={{cursor:"pointer"}}>
                                             <img className='ability p-2' style={{ opacity:"0.5"}} src={ability.displayIcon} width={"60vw"}></img>
                                             </a>
@@ -68,7 +68,7 @@ export const AgentsContainer = ({item, role,index}) => {
                                     </div>
                                 ))}
                             </div>
-                            <h5 className="txt mt-2" style={{ fontFamily: "'Saira Condensed', sans-serif", color: "#111", fontSize: "3vw", transition: "all 1s ease-linear" }}>{titleAbility}</h5>
+                            <h5 className="txt mt-2" style={{ fontFamily: "'Saira Condensed', sans-serif", color: "#111", fontSize: "3em", transition: "all 1s ease-linear" }}>{titleAbility}</h5>
                             <p className="txt fw-bolder" style={{ fontFamily: "'Noto Sans JP', sans-serif", color: "#111", width: "100%", textAlign: "justify", transition: "all 1s ease-linear" }}>{abilityInfo}</p>
                         </div>
                     </div>
