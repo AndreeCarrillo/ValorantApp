@@ -33,3 +33,23 @@
         opacity: 1;
     }
 }
+
+@media (max-width: 990px) {
+    .imgc{
+        display: none;
+    }
+    .ghost{
+        display: none;
+    }
+    .principal{
+        justify-content: center;
+        display: block !important;
+    }
+    .padding{
+        margin: 0 !important;
+        width: 100% !important;
+    }
+    .imgb{
+        display: none;
+    }
+}

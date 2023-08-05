@@ -16,7 +16,7 @@
     width: 45%;
     height: 8px;
     position: absolute;
-    top: 2%;
+    top: 8%;
     left: 55%;
 }
 
@@ -45,4 +45,10 @@
     height: 3%;
     position: absolute;
     right: 18%;
+}
+
+@media (max-width: 1200px) {
+    .prin{
+        flex-direction: column !important;
+    }
 }

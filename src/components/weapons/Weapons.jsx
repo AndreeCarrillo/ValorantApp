@@ -36,7 +36,7 @@ export const Weapons = () => {
     return (
         <>
             <div className="page pb-4" style={{position: "relative", top:"9vh"}}>
-                <h1 className="container text fw-bold py-2" style={{fontFamily:"'Saira Condensed', sans-serif", fontSize:"5vw"}}>ELIGE TU ARMA</h1>
+                <h1 className="text fw-bold py-2" style={{fontFamily:"'Saira Condensed', sans-serif", fontSize:"6vw", marginLeft:"10%"}}>ELIGE TU ARMA</h1>
                 <hr className="container pb-4"></hr>
             <div className="position-relative d-flex justify-content-center z-1">
             <div className="accordion accordion-flush" id="accordionFlushExample" style={{width:"80%"}}>
@@ -47,12 +47,12 @@ export const Weapons = () => {
                     </button>
                     </h2>
                     <div id="flush-collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" style={{backgroundColor:"#ECE8E1"}}>
-                    <div className="tittle d-flex flex-wrap flex-column justify-content-center px-5 mx-5" >
+                    <div className="accordion-body">
                     {heavyWeapons.map((item) => (
-                        <div className="grow my-2 p-5 w-100 d-flex justify-content-center" style={{border:"1px solid #BDBCB7", width:"40%"}} key={item.uuid}>
-                            <div className="d-flex flex-row justify-content-between" style={{height:"100%", width:"80%"}}>
+                        <div className="container grow my-2 p-5 w-100 d-flex justify-content-center" style={{border:"1px solid #BDBCB7", width:"40%"}} key={item.uuid}>
+                            <div className="prin d-flex flex-row justify-content-between" style={{height:"100%", width:"80%"}}>
                                 <h6 className="sub fw-bold" style={{fontFamily:"'Saira Condensed', sans-serif", fontSize:"5vw"}}>{item.displayName.toUpperCase()}.</h6>
-                                <img className="imagen" height={"100vh"} src={item.displayIcon}/>
+                                <img className="imagen" src={item.displayIcon}/>
                             </div>  
                         </div>
                     ))}
@@ -69,9 +69,9 @@ export const Weapons = () => {
                     <div className="accordion-body">
                     {shotguns.map((item) => (
                         <div className="container grow my-1 p-5 w-100 d-flex justify-content-center" style={{border:"1px solid #BDBCB7", width:"40%"}} key={item.uuid}>
-                            <div className="d-flex flex-row justify-content-between" style={{height:"100%", width:"80%"}}>
+                            <div className="prin d-flex flex-row justify-content-between" style={{height:"100%", width:"80%"}}>
                                 <h6 className="sub fw-bold" style={{fontFamily:"'Saira Condensed', sans-serif", fontSize:"5vw"}}>{item.displayName.toUpperCase()}.</h6>
-                                <img className="imagen" height={"100vh"} src={item.displayIcon}/>
+                                <img className="imagen" src={item.displayIcon}/>
                             </div>
                         </div>
                     ))}
@@ -88,9 +88,9 @@ export const Weapons = () => {
                     <div className="accordion-body">
                     {snipers.map((item) => (
                         <div className="container grow my-1 p-5 w-100 d-flex justify-content-center" style={{border:"1px solid #BDBCB7", width:"40%"}} key={item.uuid}>
-                            <div className="d-flex flex-row justify-content-between" style={{height:"100%", width:"80%"}}>
+                            <div className="prin d-flex flex-row justify-content-between" style={{height:"100%", width:"80%"}}>
                                 <h6 className="sub fw-bold" style={{fontFamily:"'Saira Condensed', sans-serif", fontSize:"5vw"}}>{item.displayName.toUpperCase()}.</h6>
-                                <img className="imagen" height={"100vh"} src={item.displayIcon}/>
+                                <img className="imagen" src={item.displayIcon}/>
                             </div>
                         </div>
                     ))}
@@ -107,9 +107,9 @@ export const Weapons = () => {
                     <div className="accordion-body" style={{backgroundColor:"#ECE8E1"}}>
                     {pistols.map((item) => (
                         <div className="container grow my-1 p-5 w-100 d-flex justify-content-center" style={{border:"1px solid #BDBCB7", width:"40%"}} key={item.uuid}>
-                            <div className="d-flex flex-row justify-content-between" style={{height:"100%", width:"80%"}}>
+                            <div className="prin d-flex flex-row justify-content-between" style={{height:"100%", width:"80%"}}>
                                 <h6 className="sub fw-bold" style={{fontFamily:"'Saira Condensed', sans-serif", fontSize:"5vw"}}>{item.displayName.toUpperCase()}.</h6>
-                                <img className="imagen" height={"100vh"} src={item.displayIcon}/>
+                                <img className="imagen" src={item.displayIcon}/>
                             </div>
                         </div>
                     ))}
@@ -126,9 +126,9 @@ export const Weapons = () => {
                     <div className="accordion-body">
                     {rifles.map((item) => (
                         <div className="container grow my-1 p-5 w-100 d-flex justify-content-center" style={{border:"1px solid #BDBCB7", width:"40%"}} key={item.uuid}>
-                            <div className="d-flex flex-row justify-content-between" style={{height:"100%", width:"80%"}}>
+                            <div className="prin d-flex flex-row justify-content-between" style={{height:"100%", width:"80%"}}>
                                 <h6 className="sub fw-bold" style={{fontFamily:"'Saira Condensed', sans-serif", fontSize:"5vw"}}>{item.displayName.toUpperCase()}.</h6>
-                                <img className="imagen" height={"100vh"} src={item.displayIcon}/>
+                                <img className="imagen" src={item.displayIcon}/>
                             </div>
                         </div>
                     ))}
@@ -145,9 +145,9 @@ export const Weapons = () => {
                     <div className="accordion-body">
                     {smg.map((item) => (
                         <div className="container grow my-1 p-5 w-100 d-flex justify-content-center" style={{border:"1px solid #BDBCB7", width:"40%"}} key={item.uuid}>
-                            <div className="d-flex flex-row justify-content-between" style={{height:"100%", width:"80%"}}>
+                            <div className="prin d-flex flex-row justify-content-between" style={{height:"100%", width:"80%"}}>
                                 <h6 className="sub fw-bold" style={{fontFamily:"'Saira Condensed', sans-serif", fontSize:"5vw"}}>{item.displayName.toUpperCase()}.</h6>
-                                <img className="imagen" height={"100vh"} src={item.displayIcon}/>
+                                <img className="imagen" src={item.displayIcon}/>
                             </div>
                         </div>
                     ))}
